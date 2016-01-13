@@ -28,23 +28,26 @@ letters long.
 def answer(document, searchTerms):
     document_split = document.split()
     order = None
-    minimum = 941098042134
+    minimum = None
     term_index = {
 
     }
     for term in searchTerms:
+        #returns indices for each term in the document and adds it to a dictionary
         indices = [i for i, x in enumerate(document_split) if x == term]
         term_index[term] = indices
     for term in term_index.keys():
         for position in term_index[term]:
             positions = [position]
             for other_position in term_index.keys():
+                #compares locations of searchTerms in the document and calculates the distance between them
                 distances = [int(abs(position - x)) for x in term_index[other_position]]
                 positions.append(term_index[other_position][distances.index(min(distances))])
                 score = max(positions) - min(positions)
-            if score < minimum:
+            if score < minimum or minimum == None:
                 minimum = score
                 order = document_split[min(positions):max(positions)+1]
+    #formats the string that is returned
     string = ''
     for i in order:
         if not i == order[-1]:
