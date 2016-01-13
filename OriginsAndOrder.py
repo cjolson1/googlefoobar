@@ -21,7 +21,6 @@ limit = {
     12: 31
 }
 
-
 def answer(x, y, z):
     nums = sorted([x, y, z])
     first = int(nums[0])
