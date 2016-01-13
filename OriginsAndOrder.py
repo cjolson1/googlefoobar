@@ -6,6 +6,7 @@ Thoughts:
 - Corner case: If two values are equal, then they are not ambiguous (since they have the same string representation). E.g., "02/28/28"
 - I could use Calendar but since it *does* take leap years into account then the answers will actually be wrong for some times.
 """
+#limit contains amount of days in the corresponding numerical month
 limit = {
     1: 31,
     2: 27,
@@ -21,7 +22,9 @@ limit = {
     12: 31
 }
 
+
 def answer(x, y, z):
+    #sort inputs in ascending order
     nums = sorted([x, y, z])
     first = int(nums[0])
     second = int(nums[1])
