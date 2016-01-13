@@ -14,10 +14,14 @@ Languages
 To provide a Python solution, edit solution.py
 To provide a Java solution, edit solution.java
 """
+#this program uses the python sorted() capability to sort the meetings by start and then end time if multiple starttimes are equal
+#it then starts at each element in the ordered list and creates the longest path through the meetings that obey the above rules.
+#It then returns the longest amount of meetings that could work in succession in the given schedule.
 def answer(meetings):
     count = 1
     for n in range(len(meetings)):
         potential = 0
+        #skip keeps track of how many elements in the list have successively been skipped because they don't work in the order of the meetings
         skip = 0
         for i in range(len(meetings[n:-1])):
             x = sorted(meetings)[n][1]
