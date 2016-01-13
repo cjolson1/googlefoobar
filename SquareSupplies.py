@@ -12,6 +12,9 @@ Write a method answer(n), which returns the smallest number of square gauze pads
 
 n will be an integer, satisfying 1 <= n <= 10000.
 """
+#The basic idea of this program is to take the int(sqrt(n)) or flooring the squareroot which provides the length of the size of the gauze
+#that you need. then you subtract this value squared from the initial squared value and repeat the process, until the remaining value is 0.
+#I had to use round(square**2) because python oftentimes won't return the exact value of squareroots.
 from math import sqrt
 def answer(n):
     count = 0
