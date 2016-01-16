@@ -1,4 +1,4 @@
-public class APirateWalksIntoABar {
+public class Answer {
     public static int answer(int[] numbers){
         int ans = 0;
         for(int n = 0; n < numbers.length; n++){
