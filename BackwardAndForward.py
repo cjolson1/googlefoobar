@@ -18,5 +18,5 @@ def conv2base(x, b):
 def answer(n):
     for i in range(2, 37):
         pali = conv2base(n, i)
-        if ''.join(reversed(pali)) == pali:
+        if pali[::-1] == pali:
             return i
