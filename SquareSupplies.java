@@ -1,5 +1,5 @@
 /**
- Square supplies
+Square supplies
 ===============
 
 With the zombie cure injections ready to go, it's time to start treating our zombified rabbit friends (known as zombits) at our makeshift zombit treatment center. You need to run out really fast to buy some gauze pads but you only have 30 seconds before you need to be back.
