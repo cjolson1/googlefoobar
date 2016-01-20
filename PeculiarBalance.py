@@ -9,7 +9,6 @@ The first element of the output list should correspond to the 1-unit weight, the
 "R" : put weight on right-hand side
 "-" : do not use weight
 To ensure that the output is the smallest possible, the last element of the list must not be "-".
-
 x will always be a positive integer, no larger than 1000000000.
 """
 from math import log
