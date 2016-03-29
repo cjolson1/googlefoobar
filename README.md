@@ -1,4 +1,2 @@
 # googlefoobar
-google foobar challenges
-levels 1-4
-(5 coming soon!)
+A series of Google coding challenges I completed over Winter Break 2015!
